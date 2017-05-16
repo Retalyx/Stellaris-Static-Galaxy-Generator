@@ -1,0 +1,276 @@
+{
+    "galaxy" : {
+        "version" : "0.9",
+        "name" : "Random Generated Galaxy",
+        "random_hyperlanes" : false,
+        "size" : 600,
+        "hl_radius" : 100000,
+        "hl_maxPerSys" : 4,
+        "seed" : 1234,
+        "stars" : 10,
+        "pnoise" : false,
+        "pnoise_scale" : 100,
+        "pnoise_freq" : 0.1,
+        "pnoise_pers" : 0.6,
+        "png_multiplier" : 1,
+        "png_randomizer" : 0,
+        "png_reducer" : 0,
+        "minimalSystemDistance" : 12,
+        "systems" : {
+            "0" : {
+                "name" : null,
+                "position" : {
+                    "x" : -222,
+                    "y" : -168
+                },
+                "spawn" : true,
+                "initializer" : "sys_0_init",
+                "prevent_hyperlane" : false,
+                "id" : 0
+            },
+            "1" : {
+                "name" : null,
+                "position" : {
+                    "x" : -74,
+                    "y" : 42
+                },
+                "spawn" : false,
+                "initializer" : null,
+                "prevent_hyperlane" : false,
+                "id" : 1
+            },
+            "2" : {
+                "name" : null,
+                "position" : {
+                    "x" : 298,
+                    "y" : 162
+                },
+                "spawn" : false,
+                "initializer" : null,
+                "prevent_hyperlane" : false,
+                "id" : 2
+            },
+            "3" : {
+                "name" : null,
+                "position" : {
+                    "x" : 264,
+                    "y" : -88
+                },
+                "spawn" : false,
+                "initializer" : null,
+                "prevent_hyperlane" : false,
+                "id" : 3
+            },
+            "4" : {
+                "name" : null,
+                "position" : {
+                    "x" : 204.3505,
+                    "y" : 24.34504
+                },
+                "spawn" : false,
+                "initializer" : null,
+                "prevent_hyperlane" : false,
+                "id" : 4
+            },
+            "5" : {
+                "name" : null,
+                "position" : {
+                    "x" : 147,
+                    "y" : -210
+                },
+                "spawn" : false,
+                "initializer" : null,
+                "prevent_hyperlane" : false,
+                "id" : 5
+            },
+            "6" : {
+                "name" : null,
+                "position" : {
+                    "x" : 216.8918,
+                    "y" : 167.4641
+                },
+                "spawn" : false,
+                "initializer" : null,
+                "prevent_hyperlane" : false,
+                "id" : 6
+            },
+            "7" : {
+                "name" : null,
+                "position" : {
+                    "x" : 161,
+                    "y" : -77
+                },
+                "spawn" : true,
+                "initializer" : "sys_7_init",
+                "prevent_hyperlane" : false,
+                "id" : 7
+            },
+            "8" : {
+                "name" : null,
+                "position" : {
+                    "x" : -71,
+                    "y" : -290
+                },
+                "spawn" : false,
+                "initializer" : null,
+                "prevent_hyperlane" : false,
+                "id" : 8
+            },
+            "9" : {
+                "name" : null,
+                "position" : {
+                    "x" : 47,
+                    "y" : 267
+                },
+                "spawn" : false,
+                "initializer" : null,
+                "prevent_hyperlane" : false,
+                "id" : 9
+            }
+        },
+        "hyperlanes" : {
+        "0" : { "from" : "2", "to" : "6", "mode" : "add" },
+        "1" : { "from" : "3", "to" : "4", "mode" : "add" },
+        "2" : { "from" : "0", "to" : "8", "mode" : "add" },
+        "3" : { "from" : "0", "to" : "1", "mode" : "add" },
+        "4" : { "from" : "0", "to" : "5", "mode" : "add" },
+        "5" : { "from" : "0", "to" : "7", "mode" : "add" },
+        "6" : { "from" : "1", "to" : "9", "mode" : "add" },
+        "7" : { "from" : "1", "to" : "7", "mode" : "add" },
+        "8" : { "from" : "1", "to" : "8", "mode" : "add" },
+        "9" : { "from" : "2", "to" : "4", "mode" : "add" },
+        "10" : { "from" : "2", "to" : "3", "mode" : "add" },
+        "11" : { "from" : "2", "to" : "9", "mode" : "add" },
+        "12" : { "from" : "3", "to" : "7", "mode" : "add" },
+        "13" : { "from" : "3", "to" : "5", "mode" : "add" },
+        "14" : { "from" : "4", "to" : "7", "mode" : "add" },
+        "15" : { "from" : "4", "to" : "6", "mode" : "add" },
+        "16" : { "from" : "5", "to" : "8", "mode" : "add" },
+        "17" : { "from" : "6", "to" : "9", "mode" : "add" }
+        }
+    },
+    "customSystems" : {
+        "0" : {
+            "name" : "random",
+            "disableCenterStar" : false,
+            "starType" : "random",
+            "starSize" : 20,
+            "asteroidBelt" : false,
+            "asteroidBeltRadius" : 10,
+            "initializerName" : "sys_0_init",
+            "systemID" : 0,
+            "planets" : {
+                "0" : {
+                    "name" : null,
+                    "class" : "random_colonizable",
+                    "modifier" : pm_high_gravity,
+                    "size" : 0,
+                    "orbitDistance" : 198,
+                    "orbitAngle" : 202,
+                    "position" : {
+                        "x" : -183.7365,
+                        "y" : -73.78967
+                    },
+                    "ringed" : false,
+                    "no_anomaly" : true,
+                    "no_resources" : true,
+                    "home" : false
+                },
+                "1" : {
+                    "name" : "Home",
+                    "class" : "ideal_planet_class",
+                    "modifier" : none,
+                    "size" : 16,
+                    "orbitDistance" : 140,
+                    "orbitAngle" : 182,
+                    "position" : {
+                        "x" : -139.9041,
+                        "y" : -5.181563
+                    },
+                    "ringed" : false,
+                    "no_anomaly" : true,
+                    "no_resources" : true,
+                    "home" : true
+                },
+                "2" : {
+                    "name" : null,
+                    "class" : "random_colonizable",
+                    "modifier" : pm_asteroid_impacts,
+                    "size" : 0,
+                    "orbitDistance" : 261,
+                    "orbitAngle" : 181,
+                    "position" : {
+                        "x" : -260.9152,
+                        "y" : -6.652153
+                    },
+                    "ringed" : false,
+                    "no_anomaly" : true,
+                    "no_resources" : true,
+                    "home" : false
+                }
+            }
+        },
+        "1" : {
+            "name" : "random",
+            "disableCenterStar" : false,
+            "starType" : "random",
+            "starSize" : 20,
+            "asteroidBelt" : false,
+            "asteroidBeltRadius" : 10,
+            "initializerName" : "sys_7_init",
+            "systemID" : 7,
+            "planets" : {
+                "0" : {
+                    "name" : null,
+                    "class" : "random",
+                    "modifier" : random,
+                    "size" : 0,
+                    "orbitDistance" : 60,
+                    "orbitAngle" : 181,
+                    "position" : {
+                        "x" : -59.98172,
+                        "y" : -1.48097
+                    },
+                    "ringed" : false,
+                    "no_anomaly" : false,
+                    "no_resources" : false,
+                    "home" : false
+                },
+                "1" : {
+                    "name" : null,
+                    "class" : "ideal_planet_class",
+                    "modifier" : none,
+                    "size" : 16,
+                    "orbitDistance" : 182,
+                    "orbitAngle" : 201,
+                    "position" : {
+                        "x" : -169.4862,
+                        "y" : -66.32064
+                    },
+                    "ringed" : false,
+                    "no_anomaly" : true,
+                    "no_resources" : true,
+                    "home" : true,
+                    "moons" : {
+                        "0" : {
+                            "name" : null,
+                            "class" : "random",
+                            "modifier" : random,
+                            "size" : 0,
+                            "orbitDistance" : 10,
+                            "orbitAngle" : 180,
+                            "position" : {
+                                "x" : -179.4862,
+                                "y" : -66.32064
+                            },
+                            "ringed" : false,
+                            "no_anomaly" : false,
+                            "no_resources" : false,
+                            "home" : false
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

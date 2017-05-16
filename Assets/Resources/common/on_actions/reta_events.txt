@@ -1,0 +1,11 @@
+# Triggers when the game starts
+on_game_start = {
+	events = {
+		game_start.1
+		game_start.2
+		game_start.3
+		game_start.4
+		game_start.5
+		reta_start.1
+	}
+}

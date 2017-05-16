@@ -1,0 +1,8 @@
+random_list = {
+	name = retalyx_random_spawn
+	
+	retalyx_empire_init_01 = 1
+	retalyx_empire_init_02 = 1
+	retalyx_empire_init_03 = 1
+	retalyx_empire_init_04 = 1
+}

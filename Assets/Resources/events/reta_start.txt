@@ -1,0 +1,56 @@
+namespace = reta_start
+
+event = {
+	id = reta_start.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		every_country = {
+			limit = { exists = capital_scope }
+						
+			if = {
+				limit = {ideal_planet_class = "pc_desert"}
+				capital_scope = {
+					change_pc = "pc_desert"
+				}
+			}
+			if = {
+				limit = {ideal_planet_class = "pc_tropical"}
+				capital_scope = {
+					change_pc = "pc_tropical"
+				}
+			}
+			if = {
+				limit = {ideal_planet_class = "pc_arid"}
+				capital_scope = {
+					change_pc = "pc_arid"
+				}
+			}
+			if = {
+				limit = {ideal_planet_class = "pc_continental"}
+				capital_scope = {
+					change_pc = "pc_continental"
+				}
+			}
+			if = {
+				limit = {ideal_planet_class = "pc_ocean"}
+				capital_scope = {
+					change_pc = "pc_ocean"
+				}
+			}
+			if = {
+				limit = {ideal_planet_class = "pc_tundra"}
+				capital_scope = {
+					change_pc = "pc_tundra"
+				}
+			}
+			if = {
+				limit = {ideal_planet_class = "pc_arctic"}
+				capital_scope = {
+					change_pc = "pc_arctic"
+				}
+			}
+		}
+	}
+}
